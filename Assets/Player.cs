@@ -17,7 +17,7 @@ public class Player : MonoBehaviour {
 	void Update () {
 
         Vector3 cameraPosition = camera.transform.position;
-        Vector3 newCameraPosition = new Vector3 (transform.position.x, transform.position.y,cameraPosition.z);
+        Vector3 newCameraPosition = new Vector3 (transform.position.x, cameraPosition.y,cameraPosition.z);
         camera.transform.position = newCameraPosition;
 
         if(Input.GetKey("d"))
